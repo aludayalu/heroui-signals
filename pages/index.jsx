@@ -4,11 +4,9 @@ import { Button } from "@heroui/button"
 function Component() {
     var [count, setCount] = Signal("count", 0)
     return (
-        <>
-        <Button onPress={() => {
+       <Button onPress={() => {
             setCount(count + 1)
         }}>Update</Button>
-        </>
     )
 }
 
