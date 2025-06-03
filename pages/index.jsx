@@ -6,7 +6,7 @@ function Component() {
     return (
        <Button onPress={() => {
             setCount(count + 1)
-        }}>Update</Button>
+        }}>{count} Update</Button>
     )
 }
 
@@ -16,6 +16,7 @@ export default function App() {
         <>
         <div>Counter: {count}</div>
         <Component></Component>
+        {count == 14 && <Component></Component>}
         </>
     )
 }
