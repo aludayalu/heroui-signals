@@ -1,4 +1,4 @@
-import { Signal } from "@aludayalu/signals"
+import Signal from "@aludayalu/signals"
 import { Button } from "@heroui/button"
 
 function Incrementer() {
@@ -12,6 +12,7 @@ function Incrementer() {
 
 export default function App() {
     var [count, _] = Signal("count", 0)
+
     return (
         <>
         <div>
